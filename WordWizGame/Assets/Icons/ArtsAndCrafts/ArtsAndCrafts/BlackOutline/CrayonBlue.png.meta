@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CrayonBlue_0: -3193429380816312344
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

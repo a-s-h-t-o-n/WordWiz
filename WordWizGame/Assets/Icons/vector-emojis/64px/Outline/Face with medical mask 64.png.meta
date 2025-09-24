@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face with medical mask 64_0: 6037185976491394194
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

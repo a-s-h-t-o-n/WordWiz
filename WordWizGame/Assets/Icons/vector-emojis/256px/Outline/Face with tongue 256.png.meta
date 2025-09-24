@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face with tongue 256_0: -3946036845457168632
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

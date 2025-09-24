@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Trash Can Black 256px_0: -6700885268288586434
+      Trash Can Black 256px_1: -1176582307143862610
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

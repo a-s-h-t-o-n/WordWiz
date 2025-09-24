@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Aura Purple 256px_0: -9048256518263985073
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

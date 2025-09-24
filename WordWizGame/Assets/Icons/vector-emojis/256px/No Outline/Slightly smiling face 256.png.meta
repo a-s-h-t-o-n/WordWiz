@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Slightly smiling face 256_0: 5698727231245740599
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

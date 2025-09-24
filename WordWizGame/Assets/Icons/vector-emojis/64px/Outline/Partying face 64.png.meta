@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Partying face 64_0: -6449624954609580548
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

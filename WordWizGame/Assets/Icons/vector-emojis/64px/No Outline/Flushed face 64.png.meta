@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Flushed face 64_0: 2017484249404946035
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

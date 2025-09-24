@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Yellow Potion 1st Outline 256px_0: 8960134683700127943
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

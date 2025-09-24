@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Shaking face 64_0: -8248254709184747804
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dog 1st 256px_0: -1553656787973746375
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

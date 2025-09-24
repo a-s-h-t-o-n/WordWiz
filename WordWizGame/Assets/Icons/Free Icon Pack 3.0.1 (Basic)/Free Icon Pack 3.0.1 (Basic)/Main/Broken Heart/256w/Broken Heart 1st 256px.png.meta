@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Broken Heart 1st 256px_0: -7938649046783345681
+      Broken Heart 1st 256px_1: 8678222392444040130
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

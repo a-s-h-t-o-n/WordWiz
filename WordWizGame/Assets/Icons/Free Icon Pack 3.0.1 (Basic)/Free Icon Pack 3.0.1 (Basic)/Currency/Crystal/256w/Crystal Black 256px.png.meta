@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Crystal Black 256px_0: 1148846364580233251
+      Crystal Black 256px_1: -2384002242596252961
+      Crystal Black 256px_2: 4310259205506661123
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

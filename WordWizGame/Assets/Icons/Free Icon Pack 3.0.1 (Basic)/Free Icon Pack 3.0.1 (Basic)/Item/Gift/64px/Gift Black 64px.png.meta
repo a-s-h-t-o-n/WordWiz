@@ -247,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gift Black 64px_0: -4607695821567536789
+      Gift Black 64px_1: -8364317166831240897
+      Gift Black 64px_2: -2394671342226439242
+      Gift Black 64px_3: 1844556783548400113
+      Gift Black 64px_4: -5344574927881518446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

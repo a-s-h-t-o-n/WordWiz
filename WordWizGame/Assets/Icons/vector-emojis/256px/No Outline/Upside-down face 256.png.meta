@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Upside-down face 256_0: -2226644403423084933
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

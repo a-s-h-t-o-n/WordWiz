@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Burger 1st Outline 256px_0: -329061832700121407
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

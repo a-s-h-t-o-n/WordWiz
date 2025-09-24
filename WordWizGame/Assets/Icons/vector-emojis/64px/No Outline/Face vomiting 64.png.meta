@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face vomiting 64_0: -1969453169410376248
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

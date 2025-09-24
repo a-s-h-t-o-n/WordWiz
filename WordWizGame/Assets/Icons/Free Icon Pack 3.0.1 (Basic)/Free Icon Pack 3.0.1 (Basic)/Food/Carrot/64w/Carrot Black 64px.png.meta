@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Carrot Black 64px_0: 4046123930701341257
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Downcase face with sweat 64_0: -6193391167462914358
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

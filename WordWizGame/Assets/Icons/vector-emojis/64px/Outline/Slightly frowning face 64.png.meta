@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Slightly frowning face 64_0: 3147519535422710989
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

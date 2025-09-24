@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Purple Potion 1st 64px_0: -3260169090165743332
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

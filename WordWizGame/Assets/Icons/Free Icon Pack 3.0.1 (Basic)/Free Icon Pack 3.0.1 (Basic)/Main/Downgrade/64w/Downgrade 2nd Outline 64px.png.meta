@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Downgrade 2nd Outline 64px_0: 7091827128511457288
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

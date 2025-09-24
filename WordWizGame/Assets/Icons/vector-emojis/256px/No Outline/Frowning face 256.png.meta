@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Frowning face 256_0: -1022550169963798847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

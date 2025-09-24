@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blueberry Black 256px_0: -60073200390568131
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

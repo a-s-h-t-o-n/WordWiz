@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cash Black 64px_0: -6066040761713726252
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

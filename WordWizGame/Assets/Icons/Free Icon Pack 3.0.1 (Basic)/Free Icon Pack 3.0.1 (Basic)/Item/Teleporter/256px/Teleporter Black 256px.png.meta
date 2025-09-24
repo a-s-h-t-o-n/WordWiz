@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Teleporter Black 256px_0: 8623935347844883119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face with diagonal mouth 256_0: -994154272218830156
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

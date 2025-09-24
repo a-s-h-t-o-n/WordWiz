@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Planet Black 64px_0: 7254549757174011801
+      Planet Black 64px_1: -1529175786284729275
+      Planet Black 64px_2: -697288618695566717
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

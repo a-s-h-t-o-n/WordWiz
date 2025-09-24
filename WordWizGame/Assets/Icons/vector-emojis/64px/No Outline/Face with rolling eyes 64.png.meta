@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face with rolling eyes 64_0: -2657245832809722510
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

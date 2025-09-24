@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Teleporter White 64px_0: -7204553019869719677
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

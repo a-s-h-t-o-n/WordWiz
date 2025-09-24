@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gum White 256px_0: 4321271349780241054
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

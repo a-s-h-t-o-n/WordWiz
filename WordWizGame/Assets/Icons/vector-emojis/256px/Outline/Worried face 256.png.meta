@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Worried face 256_0: 7502269082443053793
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

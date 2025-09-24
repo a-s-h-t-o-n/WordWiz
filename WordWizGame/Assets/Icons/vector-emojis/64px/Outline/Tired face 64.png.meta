@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tired face 64_0: -2202017792872421930
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

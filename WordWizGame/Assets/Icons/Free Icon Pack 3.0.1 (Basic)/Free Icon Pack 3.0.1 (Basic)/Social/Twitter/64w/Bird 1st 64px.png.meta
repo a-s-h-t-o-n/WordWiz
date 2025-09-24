@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bird 1st 64px_0: 608486594634918066
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

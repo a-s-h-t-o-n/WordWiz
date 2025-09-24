@@ -116,12 +116,12 @@ TextureImporter:
       name: Apple_Icon_0
       rect:
         serializedVersion: 2
-        x: 85
-        y: 69
-        width: 342
+        x: 61
+        y: 65
+        width: 391
         height: 391
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2ac221299189e9f458ccbc6aec984adc
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Apple_Icon_0: 1488219961968408541
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Disappointed face 64_0: 1349105994047080538
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

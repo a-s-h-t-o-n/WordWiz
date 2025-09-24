@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cracked Egg 1st 256px_0: 5504916357979134140
+      Cracked Egg 1st 256px_1: -4832872357334627411
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

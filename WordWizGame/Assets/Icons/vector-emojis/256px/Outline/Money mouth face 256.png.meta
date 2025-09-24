@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Money mouth face 256_0: -1918415340786685881
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

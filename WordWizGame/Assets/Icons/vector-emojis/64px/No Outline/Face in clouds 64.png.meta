@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face in clouds 64_0: 1832632115025673070
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

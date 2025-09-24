@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cash White 64px_0: -8263312916876315465
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

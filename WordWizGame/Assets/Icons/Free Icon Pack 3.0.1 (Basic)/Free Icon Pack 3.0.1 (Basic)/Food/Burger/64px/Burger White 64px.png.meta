@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Burger White 64px_0: -6869037470600745011
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

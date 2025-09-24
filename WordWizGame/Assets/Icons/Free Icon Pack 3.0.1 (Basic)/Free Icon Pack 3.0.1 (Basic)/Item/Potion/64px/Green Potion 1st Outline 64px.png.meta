@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Green Potion 1st Outline 64px_0: -6800256761761628125
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

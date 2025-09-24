@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bunny 1st 256px_0: -3985844651390211065
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

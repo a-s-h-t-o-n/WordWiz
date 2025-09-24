@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Banana Black 256px_0: -7190253106175685870
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

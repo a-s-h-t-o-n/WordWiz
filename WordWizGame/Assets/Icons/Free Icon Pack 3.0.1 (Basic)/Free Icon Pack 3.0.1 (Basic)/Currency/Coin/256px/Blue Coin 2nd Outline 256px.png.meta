@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blue Coin 2nd Outline 256px_0: 8528359649576282656
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

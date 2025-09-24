@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Red Coin 1st 64px_0: -7103159397981256864
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

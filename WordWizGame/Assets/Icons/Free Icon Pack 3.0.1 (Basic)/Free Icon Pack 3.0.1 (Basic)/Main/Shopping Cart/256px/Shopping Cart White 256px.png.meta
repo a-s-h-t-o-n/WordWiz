@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Shopping Cart White 256px_0: 8586437237229330355
+      Shopping Cart White 256px_1: -1451233521787985956
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

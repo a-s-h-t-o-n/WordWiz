@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fire 2nd Outline_1 64px_0: 4004579618392612625
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

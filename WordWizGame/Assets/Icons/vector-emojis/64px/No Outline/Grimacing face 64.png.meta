@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Grimacing face 64_0: 3049186392420094455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

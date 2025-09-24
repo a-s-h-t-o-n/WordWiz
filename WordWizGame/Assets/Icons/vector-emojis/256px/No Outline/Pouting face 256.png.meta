@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pouting face 256_0: 6817400244254688895
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

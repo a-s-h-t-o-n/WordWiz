@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sleeping face 256_0: -1414752109563804278
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

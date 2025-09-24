@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face with spiral eyes 64_0: -662282476073225239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

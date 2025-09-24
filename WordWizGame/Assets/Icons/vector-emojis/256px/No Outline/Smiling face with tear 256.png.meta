@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Smiling face with tear 256_0: 5581935788570617608
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

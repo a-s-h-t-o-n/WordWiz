@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Torch 2nd Purple 256px_0: -5250871078478468883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

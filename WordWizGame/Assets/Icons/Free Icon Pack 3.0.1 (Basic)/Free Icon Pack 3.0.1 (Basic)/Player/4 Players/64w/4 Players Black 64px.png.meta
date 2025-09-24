@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      4 Players Black 64px_0: 5665207890649828270
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

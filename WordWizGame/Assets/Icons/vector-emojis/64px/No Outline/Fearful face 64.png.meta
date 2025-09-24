@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fearful face 64_0: 1005123903047298033
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

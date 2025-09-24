@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gamepad White 256px_0: -1513700917727476897
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

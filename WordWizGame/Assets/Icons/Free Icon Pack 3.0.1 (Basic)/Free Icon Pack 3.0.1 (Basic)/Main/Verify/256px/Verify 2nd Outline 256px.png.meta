@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Verify 2nd Outline 256px_0: -5242864550968128214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

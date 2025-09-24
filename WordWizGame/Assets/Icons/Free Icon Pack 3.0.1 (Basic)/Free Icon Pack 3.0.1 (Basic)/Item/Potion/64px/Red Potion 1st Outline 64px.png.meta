@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Red Potion 1st Outline 64px_0: 4923940713350359212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pencil White 64px_0: -1822954731881940221
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

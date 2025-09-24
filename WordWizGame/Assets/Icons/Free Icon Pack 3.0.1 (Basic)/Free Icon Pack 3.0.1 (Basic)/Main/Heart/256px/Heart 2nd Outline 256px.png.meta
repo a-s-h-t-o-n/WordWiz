@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Heart 2nd Outline 256px_0: 8414402976007778116
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

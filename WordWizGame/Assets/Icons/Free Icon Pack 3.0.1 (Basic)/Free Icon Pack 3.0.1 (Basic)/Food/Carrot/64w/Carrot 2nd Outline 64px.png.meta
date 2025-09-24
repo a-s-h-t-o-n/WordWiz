@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Carrot 2nd Outline 64px_0: 2767873520488843683
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

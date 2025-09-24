@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face with head bandage 64_0: 3520111272558786760
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

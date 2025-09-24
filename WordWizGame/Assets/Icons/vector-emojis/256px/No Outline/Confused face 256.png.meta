@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Confused face 256_0: 5111151814057352428
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
