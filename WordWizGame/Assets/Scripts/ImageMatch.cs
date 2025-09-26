@@ -97,9 +97,13 @@ public class ImageMatch : MonoBehaviour
             imageObjects[i].sprite = generatedImages[i];
             
             // select a random word object, make sure it's not already used
-            //int k = Random.Range(0, 3 - i);
-            wordObjects[i].textMesh.text = spriteList[j].name.PartBefore('_');
-            wordObjects[i].correctSprite = generatedImages[i];
+            int k = Random.Range(0, 3);
+            while (wordObjects[k].correctSprite != null)
+            {
+                k = Random.Range(0, 3);
+            }
+            wordObjects[k].textMesh.text = spriteList[j].name.PartBefore('_');
+            wordObjects[k].correctSprite = generatedImages[i];
         }
     }
 
