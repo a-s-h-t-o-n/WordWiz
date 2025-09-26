@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face without mouth 256_0: 3754691007777761962
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

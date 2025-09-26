@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Thunderstorm Black 64px_0: 8050780285523869149
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

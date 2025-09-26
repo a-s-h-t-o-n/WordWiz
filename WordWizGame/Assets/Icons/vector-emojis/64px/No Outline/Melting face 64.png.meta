@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Melting face 64_0: 3289400592758303775
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

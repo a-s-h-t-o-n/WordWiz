@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face with tears of joy 256_0: -1955959282385158931
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

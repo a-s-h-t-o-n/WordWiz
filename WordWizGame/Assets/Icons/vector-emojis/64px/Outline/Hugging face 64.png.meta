@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hugging face 64_0: 4739060810543126278
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

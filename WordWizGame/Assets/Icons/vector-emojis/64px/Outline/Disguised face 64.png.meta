@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Disguised face 64_0: -5640679851147460373
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

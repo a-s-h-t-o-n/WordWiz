@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Music OFF White 64px_0: 3895616088285572832
+      Music OFF White 64px_1: 3401203168005257386
+      Music OFF White 64px_2: 5506743309023578555
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

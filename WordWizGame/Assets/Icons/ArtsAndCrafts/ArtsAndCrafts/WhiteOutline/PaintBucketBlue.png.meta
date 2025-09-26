@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PaintBucketBlue_0: 4025900204953388812
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

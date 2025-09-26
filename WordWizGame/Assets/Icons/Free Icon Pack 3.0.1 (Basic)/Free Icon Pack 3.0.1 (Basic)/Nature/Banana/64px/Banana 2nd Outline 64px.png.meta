@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Banana 2nd Outline 64px_0: 1306827074348222507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

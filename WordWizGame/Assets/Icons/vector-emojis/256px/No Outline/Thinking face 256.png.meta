@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Thinking face 256_0: -1808424007387626016
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

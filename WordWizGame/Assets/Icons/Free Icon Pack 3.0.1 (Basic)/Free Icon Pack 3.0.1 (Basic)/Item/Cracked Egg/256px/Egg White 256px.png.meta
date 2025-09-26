@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Egg White 256px_0: -3275261858781724291
+      Egg White 256px_1: -1450849235704499587
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

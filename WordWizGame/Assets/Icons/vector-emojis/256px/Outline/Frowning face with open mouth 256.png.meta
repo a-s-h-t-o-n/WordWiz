@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Frowning face with open mouth 256_0: -2238382887320156093
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Shushing face 64_0: -2724203791786787251
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

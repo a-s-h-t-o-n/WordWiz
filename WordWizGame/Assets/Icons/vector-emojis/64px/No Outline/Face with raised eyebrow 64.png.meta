@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face with raised eyebrow 64_0: -625114159354489740
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

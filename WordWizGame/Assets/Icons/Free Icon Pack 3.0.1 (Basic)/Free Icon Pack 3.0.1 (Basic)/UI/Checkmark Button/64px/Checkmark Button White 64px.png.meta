@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Checkmark Button White 64px_0: -8720693110528452684
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

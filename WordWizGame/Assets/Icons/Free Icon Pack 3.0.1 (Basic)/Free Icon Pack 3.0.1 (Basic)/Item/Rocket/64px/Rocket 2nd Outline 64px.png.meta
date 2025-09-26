@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rocket 2nd Outline 64px_0: 2875200179470083082
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

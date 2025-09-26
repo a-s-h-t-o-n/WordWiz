@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lying face 256_0: 4660787686493499626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

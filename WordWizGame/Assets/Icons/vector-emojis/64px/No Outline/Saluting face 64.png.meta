@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Saluting face 64_0: 2125603954960954500
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

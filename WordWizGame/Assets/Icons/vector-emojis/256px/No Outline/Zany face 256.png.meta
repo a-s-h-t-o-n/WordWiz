@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Zany face 256_0: 5999088931209036277
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

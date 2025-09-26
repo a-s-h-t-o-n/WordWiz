@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Zipper-mouth face 256_0: 5680709319210773240
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

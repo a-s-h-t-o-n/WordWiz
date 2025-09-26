@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bird 2nd Outline 256px_0: -9180944060691709226
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

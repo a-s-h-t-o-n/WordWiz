@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face with peeking eye 64_0: 8705611922619143173
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

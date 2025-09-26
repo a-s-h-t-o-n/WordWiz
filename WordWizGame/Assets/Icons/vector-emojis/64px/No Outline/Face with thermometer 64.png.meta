@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face with thermometer 64_0: 3055937122141436664
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hushed face 64_0: 2799274907238501169
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

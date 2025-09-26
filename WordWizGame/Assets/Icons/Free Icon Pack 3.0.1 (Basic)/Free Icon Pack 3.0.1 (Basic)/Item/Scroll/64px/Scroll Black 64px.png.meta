@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Scroll Black 64px_0: 1283431708849051205
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

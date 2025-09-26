@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gamepad Black 64px_0: 3912223935833026961
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

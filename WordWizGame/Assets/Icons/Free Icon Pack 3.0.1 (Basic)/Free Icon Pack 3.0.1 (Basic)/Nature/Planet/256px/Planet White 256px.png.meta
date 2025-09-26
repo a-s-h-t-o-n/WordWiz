@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Planet White 256px_0: 7562489230833658806
+      Planet White 256px_1: -1720847389372549060
+      Planet White 256px_2: -2609727339400198946
+      Planet White 256px_3: -5331716846529964496
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

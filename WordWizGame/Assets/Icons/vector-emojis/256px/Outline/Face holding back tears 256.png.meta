@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face holding back tears 256_0: -249937681315793670
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

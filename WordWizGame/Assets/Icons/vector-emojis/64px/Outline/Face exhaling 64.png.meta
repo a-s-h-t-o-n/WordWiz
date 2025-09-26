@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face exhaling 64_0: -8223778319442553380
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

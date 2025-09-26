@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sleepy face 256_0: 8797884208513035347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

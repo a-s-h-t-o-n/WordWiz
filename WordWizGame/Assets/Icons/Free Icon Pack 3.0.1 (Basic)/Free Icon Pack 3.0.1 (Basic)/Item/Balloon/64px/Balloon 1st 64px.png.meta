@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Balloon 1st 64px_0: -7755867565620990435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

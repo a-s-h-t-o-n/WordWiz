@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Relieved face 64_0: 941291712428094223
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

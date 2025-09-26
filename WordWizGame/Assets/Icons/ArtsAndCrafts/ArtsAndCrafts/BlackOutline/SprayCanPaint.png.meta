@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SprayCanPaint_0: 1280624919685045207
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

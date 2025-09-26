@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Carrot White 256px_0: -1543902048715154214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

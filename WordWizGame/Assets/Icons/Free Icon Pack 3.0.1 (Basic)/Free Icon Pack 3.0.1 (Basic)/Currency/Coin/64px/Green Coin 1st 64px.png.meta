@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Green Coin 1st 64px_0: -6181641449219243413
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

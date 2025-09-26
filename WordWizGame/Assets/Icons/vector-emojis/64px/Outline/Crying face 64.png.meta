@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Crying face 64_0: -6489733401832445056
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

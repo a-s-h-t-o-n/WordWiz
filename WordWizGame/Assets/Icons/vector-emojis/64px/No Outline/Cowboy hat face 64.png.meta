@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cowboy hat face 64_0: 7410605095895313611
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

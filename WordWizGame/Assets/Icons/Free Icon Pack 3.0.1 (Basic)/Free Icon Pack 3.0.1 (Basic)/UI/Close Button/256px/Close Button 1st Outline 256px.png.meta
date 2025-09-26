@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Close Button 1st Outline 256px_0: 5163386228046473457
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

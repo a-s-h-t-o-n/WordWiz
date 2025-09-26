@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face with monocle 64_0: 4639257661592426213
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

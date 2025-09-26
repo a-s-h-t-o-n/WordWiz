@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Torch 2nd Purple Outline 64px_0: -8419749356808130670
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

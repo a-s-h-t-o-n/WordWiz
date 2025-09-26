@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Chest 1st Outline 256px_0: -132274989600294133
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

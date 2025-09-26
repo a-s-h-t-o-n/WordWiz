@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Backpack 2nd Outline 256px_0: 4790606243808221240
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

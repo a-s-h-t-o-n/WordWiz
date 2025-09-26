@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hoverboard Black 256px_0: 800839958590605924
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Woozy face 256_0: 2781809585505434963
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face with steam from nose 256_0: 6566973784360086498
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

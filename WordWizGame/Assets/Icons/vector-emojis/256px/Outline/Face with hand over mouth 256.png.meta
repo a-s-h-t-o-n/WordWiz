@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Face with hand over mouth 256_0: 637632989871919355
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

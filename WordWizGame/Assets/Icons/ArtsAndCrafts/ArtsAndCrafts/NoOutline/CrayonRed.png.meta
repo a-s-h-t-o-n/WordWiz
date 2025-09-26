@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CrayonRed_0: -8036690351535389581
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

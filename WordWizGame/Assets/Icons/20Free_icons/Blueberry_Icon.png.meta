@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blueberry_Icon_0: 1989295084313493146
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

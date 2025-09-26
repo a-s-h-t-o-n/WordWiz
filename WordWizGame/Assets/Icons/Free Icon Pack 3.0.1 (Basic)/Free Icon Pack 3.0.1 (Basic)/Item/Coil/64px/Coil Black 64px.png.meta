@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Coil Black 64px_0: 8472646175007051532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

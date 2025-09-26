@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Nauseated face 64_0: 2299400906859074419
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

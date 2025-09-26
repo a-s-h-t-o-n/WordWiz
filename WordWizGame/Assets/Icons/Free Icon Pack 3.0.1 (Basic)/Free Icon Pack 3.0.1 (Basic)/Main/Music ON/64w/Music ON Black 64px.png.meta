@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Music ON Black 64px_0: 1033583441658461514
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
