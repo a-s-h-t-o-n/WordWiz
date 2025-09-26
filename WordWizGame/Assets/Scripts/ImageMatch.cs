@@ -18,6 +18,8 @@ public class ImageMatch : MonoBehaviour
     public static Image overlappedArea;
 
     private List<Sprite> generatedImages = new List<Sprite>();
+    
+    [SerializeField] private StarManager starManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -118,6 +120,7 @@ public class ImageMatch : MonoBehaviour
             }
         }
         
+        starManager.ShowResults(numCorrect);
         Debug.Log($"YOU GOT {numCorrect} ANSWERS CORRECT");
     }
 }
