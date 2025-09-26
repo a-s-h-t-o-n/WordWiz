@@ -1,7 +1,10 @@
 using UnityEngine;
 
-public class AttachToMouse : MonoBehaviour
+public class ImageOption : MonoBehaviour
 {
+    public string imageName;
+
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

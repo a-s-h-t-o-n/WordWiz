@@ -269,6 +269,8 @@ GameObject:
   - component: {fileID: 521243580}
   - component: {fileID: 521243579}
   - component: {fileID: 521243578}
+  - component: {fileID: 521243581}
+  - component: {fileID: 521243582}
   m_Layer: 5
   m_Name: Word1Button
   m_TagString: Untagged
@@ -339,7 +341,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 521243579}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1826710887}
+        m_TargetAssemblyTypeName: ImageMatch, Assembly-CSharp
+        m_MethodName: ToggleImageHold
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 521243579}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &521243579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,6 +392,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521243576}
   m_CullTransparentMesh: 1
+--- !u!114 &521243581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521243576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9435d7cbf541e42807ccc1f42b27b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPos: {x: 0, y: 0, z: 0}
+  occupiedArea: {fileID: 0}
+  correctSprite: {fileID: 0}
+  textMesh: {fileID: 321549270}
+--- !u!70 &521243582
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521243576}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 225, y: 90}
+  m_Direction: 1
 --- !u!1 &586151826
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +456,7 @@ GameObject:
   - component: {fileID: 586151827}
   - component: {fileID: 586151829}
   - component: {fileID: 586151828}
+  - component: {fileID: 586151830}
   m_Layer: 5
   m_Name: Image1
   m_TagString: Untagged
@@ -453,6 +521,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586151826}
   m_CullTransparentMesh: 1
+--- !u!114 &586151830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586151826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b66d4cc390b80438a67d942dcb4293, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageName: 
 --- !u!1 &712797340
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,6 +857,8 @@ GameObject:
   - component: {fileID: 762854455}
   - component: {fileID: 762854457}
   - component: {fileID: 762854456}
+  - component: {fileID: 762854458}
+  - component: {fileID: 762854459}
   m_Layer: 5
   m_Name: Area1
   m_TagString: Untagged
@@ -840,6 +923,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762854454}
   m_CullTransparentMesh: 1
+--- !u!70 &762854458
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762854454}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 225, y: 90}
+  m_Direction: 1
+--- !u!114 &762854459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762854454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f956b903ae382b4e9480f96ae64a0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areaWidth: 200
+  areaHeight: 50
+  areaRadius: 200
+  imageHeld: {fileID: 0}
+  associatedSprite: {fileID: 0}
 --- !u!1 &1020078399
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,6 +1109,7 @@ GameObject:
   - component: {fileID: 1054938670}
   - component: {fileID: 1054938672}
   - component: {fileID: 1054938671}
+  - component: {fileID: 1054938673}
   m_Layer: 5
   m_Name: Image2
   m_TagString: Untagged
@@ -1036,6 +1174,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054938669}
   m_CullTransparentMesh: 1
+--- !u!114 &1054938673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054938669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b66d4cc390b80438a67d942dcb4293, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageName: 
 --- !u!1 &1076182976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,6 +1198,8 @@ GameObject:
   - component: {fileID: 1076182977}
   - component: {fileID: 1076182979}
   - component: {fileID: 1076182978}
+  - component: {fileID: 1076182980}
+  - component: {fileID: 1076182981}
   m_Layer: 5
   m_Name: Area2
   m_TagString: Untagged
@@ -1111,6 +1264,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076182976}
   m_CullTransparentMesh: 1
+--- !u!70 &1076182980
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076182976}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 225, y: 90}
+  m_Direction: 1
+--- !u!114 &1076182981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076182976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f956b903ae382b4e9480f96ae64a0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areaWidth: 200
+  areaHeight: 50
+  areaRadius: 200
+  imageHeld: {fileID: 0}
+  associatedSprite: {fileID: 0}
 --- !u!1 &1199257509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,6 +1330,8 @@ GameObject:
   - component: {fileID: 1199257513}
   - component: {fileID: 1199257512}
   - component: {fileID: 1199257511}
+  - component: {fileID: 1199257514}
+  - component: {fileID: 1199257515}
   m_Layer: 5
   m_Name: Word2Button
   m_TagString: Untagged
@@ -1193,7 +1402,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1199257512}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1826710887}
+        m_TargetAssemblyTypeName: ImageMatch, Assembly-CSharp
+        m_MethodName: ToggleImageHold
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1199257512}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1199257512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1232,6 +1453,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199257509}
   m_CullTransparentMesh: 1
+--- !u!70 &1199257514
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199257509}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 225, y: 90}
+  m_Direction: 1
+--- !u!114 &1199257515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199257509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9435d7cbf541e42807ccc1f42b27b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPos: {x: 0, y: 0, z: 0}
+  occupiedArea: {fileID: 0}
+  correctSprite: {fileID: 0}
+  textMesh: {fileID: 726228185}
 --- !u!1 &1383690139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,6 +1732,7 @@ GameObject:
   - component: {fileID: 1467968656}
   - component: {fileID: 1467968658}
   - component: {fileID: 1467968657}
+  - component: {fileID: 1467968659}
   m_Layer: 5
   m_Name: Image2
   m_TagString: Untagged
@@ -1522,6 +1797,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1467968655}
   m_CullTransparentMesh: 1
+--- !u!114 &1467968659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467968655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b66d4cc390b80438a67d942dcb4293, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageName: 
 --- !u!1 &1634522430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,15 +2044,15 @@ RectTransform:
   m_Children:
   - {fileID: 1940117814}
   - {fileID: 1020078400}
-  - {fileID: 521243577}
-  - {fileID: 1199257510}
-  - {fileID: 2020700531}
   - {fileID: 586151827}
   - {fileID: 1467968656}
   - {fileID: 1054938670}
   - {fileID: 762854455}
   - {fileID: 1076182977}
   - {fileID: 1911269173}
+  - {fileID: 521243577}
+  - {fileID: 1199257510}
+  - {fileID: 2020700531}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1816,11 +2104,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aead4c76e67fd84bb865273a07d9ac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageList: []
+  spriteList:
+  - {fileID: 1488219961968408541, guid: 212dafa4d115adb4b97a92c49e622407, type: 3}
+  - {fileID: 5481178827603167489, guid: fa9492bfd6935ff4c9ed6497915730f3, type: 3}
+  - {fileID: 1989295084313493146, guid: 8f3d13ff87078a44295cb743fbd2e230, type: 3}
+  - {fileID: -794748231820803858, guid: 8e3e3bfcb8b36c941bdc632d3489ef56, type: 3}
+  - {fileID: -7035740149812634158, guid: b1483e78e327321448c1f6e0d5d2b3c5, type: 3}
+  - {fileID: 641729819222287949, guid: d3bd6a8fcc0f20145b0a34f9d3561499, type: 3}
+  - {fileID: -7141420232452656277, guid: 3b4bc17669a80bd439625b6dc8f01e0b, type: 3}
+  - {fileID: 2490344850088888278, guid: 71e9cb4eadc5fe4489ed33d78df4bc68, type: 3}
+  - {fileID: -2457084542837490464, guid: 6a9ffba34709d81468bb570dfe70c464, type: 3}
+  - {fileID: 4446079057117255339, guid: 291dd020363f0584ea5b104e6dece948, type: 3}
+  - {fileID: -3862673050541323957, guid: 25bd564b1b217f645ad6409ca33c53ca, type: 3}
+  - {fileID: -131199687727536385, guid: 3e22b936463bba547a013cdbddb75cc2, type: 3}
+  - {fileID: 8546829759914639546, guid: 747d18db071c1224e8d424ef7a2dea10, type: 3}
+  - {fileID: 1529000663050044662, guid: 1b95b6d03e525ae49a4c0828507859a7, type: 3}
+  - {fileID: -5854450039584380100, guid: 0ddb7652765fc2e4bb657b255aa0a969, type: 3}
   imageObjects:
   - {fileID: 586151828}
   - {fileID: 1467968657}
   - {fileID: 1054938671}
+  wordObjects:
+  - {fileID: 321549270}
+  - {fileID: 726228185}
+  - {fileID: 1634522432}
+  areaList:
+  - {fileID: 762854459}
+  - {fileID: 1076182981}
+  - {fileID: 1911269177}
 --- !u!1 &1911269172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1832,6 +2143,8 @@ GameObject:
   - component: {fileID: 1911269173}
   - component: {fileID: 1911269175}
   - component: {fileID: 1911269174}
+  - component: {fileID: 1911269176}
+  - component: {fileID: 1911269177}
   m_Layer: 5
   m_Name: Area3
   m_TagString: Untagged
@@ -1896,6 +2209,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911269172}
   m_CullTransparentMesh: 1
+--- !u!70 &1911269176
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911269172}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 225, y: 90}
+  m_Direction: 1
+--- !u!114 &1911269177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911269172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f956b903ae382b4e9480f96ae64a0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areaWidth: 200
+  areaHeight: 50
+  areaRadius: 200
+  imageHeld: {fileID: 0}
+  associatedSprite: {fileID: 0}
 --- !u!1 &1940117813
 GameObject:
   m_ObjectHideFlags: 0
@@ -2040,6 +2407,8 @@ GameObject:
   - component: {fileID: 2020700534}
   - component: {fileID: 2020700533}
   - component: {fileID: 2020700532}
+  - component: {fileID: 2020700535}
+  - component: {fileID: 2020700536}
   m_Layer: 5
   m_Name: Word3Button
   m_TagString: Untagged
@@ -2110,7 +2479,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2020700533}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1826710887}
+        m_TargetAssemblyTypeName: ImageMatch, Assembly-CSharp
+        m_MethodName: ToggleImageHold
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2020700533}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2020700533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2149,6 +2530,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020700530}
   m_CullTransparentMesh: 1
+--- !u!70 &2020700535
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020700530}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 225, y: 90}
+  m_Direction: 1
+--- !u!114 &2020700536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020700530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9435d7cbf541e42807ccc1f42b27b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPos: {x: 0, y: 0, z: 0}
+  occupiedArea: {fileID: 0}
+  correctSprite: {fileID: 0}
+  textMesh: {fileID: 1634522432}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

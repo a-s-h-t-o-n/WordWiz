@@ -12,7 +12,7 @@ public class MissingLetter : MonoBehaviour
     private TextMeshProUGUI selectedAnswer;
 
     // replace this w/ SO or similar data object
-    private string[] words = { "egg", "apple", "shoe", "bee", "flower", "tree", "rock", "juice", "colour", "fruit", "meat", "food" };
+    private string[] words = { "egg", "apple", "shoe", "bee", "flower", "tree", "rock", "juice", "colour", "fruit", "meat", "food", "banana", "fish", "cheese", "ice", "milk", "home", "car" };
 
     [SerializeField] private TextMeshProUGUI buttonText1, buttonText2, buttonText3, wordText1;
     
