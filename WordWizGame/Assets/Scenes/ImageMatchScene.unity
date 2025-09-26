@@ -347,8 +347,8 @@ MonoBehaviour:
         m_MethodName: ToggleImageHold
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 521243579}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_ObjectArgument: {fileID: 521243581}
+          m_ObjectArgumentAssemblyTypeName: WordOption, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -975,7 +975,7 @@ MonoBehaviour:
   areaWidth: 200
   areaHeight: 50
   areaRadius: 200
-  imageHeld: {fileID: 0}
+  wordHeld: {fileID: 0}
   associatedSprite: {fileID: 0}
 --- !u!1 &1020078399
 GameObject:
@@ -1316,7 +1316,7 @@ MonoBehaviour:
   areaWidth: 200
   areaHeight: 50
   areaRadius: 200
-  imageHeld: {fileID: 0}
+  wordHeld: {fileID: 0}
   associatedSprite: {fileID: 0}
 --- !u!1 &1199257509
 GameObject:
@@ -1408,8 +1408,8 @@ MonoBehaviour:
         m_MethodName: ToggleImageHold
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1199257512}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_ObjectArgument: {fileID: 1199257515}
+          m_ObjectArgumentAssemblyTypeName: WordOption, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2125,9 +2125,9 @@ MonoBehaviour:
   - {fileID: 1467968657}
   - {fileID: 1054938671}
   wordObjects:
-  - {fileID: 321549270}
-  - {fileID: 726228185}
-  - {fileID: 1634522432}
+  - {fileID: 521243581}
+  - {fileID: 1199257515}
+  - {fileID: 2020700536}
   areaList:
   - {fileID: 762854459}
   - {fileID: 1076182981}
@@ -2261,7 +2261,7 @@ MonoBehaviour:
   areaWidth: 200
   areaHeight: 50
   areaRadius: 200
-  imageHeld: {fileID: 0}
+  wordHeld: {fileID: 0}
   associatedSprite: {fileID: 0}
 --- !u!1 &1940117813
 GameObject:
@@ -2345,9 +2345,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MissingLetter, Assembly-CSharp
-        m_MethodName: CheckSelection
+      - m_Target: {fileID: 1826710887}
+        m_TargetAssemblyTypeName: ImageMatch, Assembly-CSharp
+        m_MethodName: CheckAnswers
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2485,8 +2485,8 @@ MonoBehaviour:
         m_MethodName: ToggleImageHold
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2020700533}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_ObjectArgument: {fileID: 2020700536}
+          m_ObjectArgumentAssemblyTypeName: WordOption, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

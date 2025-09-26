@@ -9,10 +9,10 @@ public class ImageMatch : MonoBehaviour
 {
     [SerializeField] private List<Sprite> spriteList;
     [SerializeField] private List<Image> imageObjects;
-    [SerializeField] private List<TextMeshProUGUI> wordObjects;
+    [SerializeField] private List<WordOption> wordObjects;
     [SerializeField] private List<Area> areaList;
 
-    private Image heldImage;
+    private WordOption heldWord;
     public static Image overlappedArea;
 
     private List<Sprite> generatedImages = new List<Sprite>();
@@ -25,30 +25,30 @@ public class ImageMatch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (heldImage != null)
+        if (heldWord != null)
         {
-            if (heldImage)
+            if (heldWord)
             {
-                heldImage.gameObject.transform.position = Input.mousePosition;
+                heldWord.gameObject.transform.position = Input.mousePosition;
             }
         }
         
     }
 
-    public void ToggleImageHold(Image image)
+    public void ToggleImageHold(WordOption word)
     {
-        if (heldImage == null)
+        if (heldWord == null)
         {
-            if (heldImage.GetComponent<WordOption>().occupiedArea != null)
+            heldWord = word;
+            if (heldWord.occupiedArea != null)
             {
-                heldImage.GetComponent<WordOption>().occupiedArea.imageHeld = null;
+                heldWord.occupiedArea.wordHeld = null;
             }
-            heldImage = image;
         }
         else
         {
             TryPlaceImage();
-            heldImage = null;
+            heldWord = null;
         }
         
     }
@@ -57,19 +57,19 @@ public class ImageMatch : MonoBehaviour
     {
         foreach (var area in areaList)
         {
-            if (Vector3.Distance(heldImage.transform.position, area.transform.position) <= area.areaRadius)
+            if (Vector3.Distance(heldWord.transform.position, area.transform.position) <= area.areaRadius)
             {
-                heldImage.transform.position = area.transform.position;
-                area.imageHeld = heldImage;
-                heldImage.GetComponent<WordOption>().occupiedArea = area;
+                heldWord.transform.position = area.transform.position;
+                area.wordHeld = heldWord;
+                heldWord.GetComponent<WordOption>().occupiedArea = area;
                 return;
             }
         }
         
-        WordOption word = heldImage.GetComponent<WordOption>();
+        WordOption word = heldWord.GetComponent<WordOption>();
         if (word)
         {
-            heldImage.transform.position = word.startPos;
+            heldWord.transform.position = word.startPos;
         }
         
     }
@@ -82,7 +82,8 @@ public class ImageMatch : MonoBehaviour
             generatedImages.Insert(i, spriteList[j]);
             areaList[i].associatedSprite = generatedImages[i];
             imageObjects[i].sprite = generatedImages[i];
-            wordObjects[i].text = spriteList[j].name.PartBefore('_');
+            wordObjects[i].textMesh.text = spriteList[j].name.PartBefore('_');
+            wordObjects[i].correctSprite = generatedImages[i];
         }
     }
 
@@ -91,7 +92,7 @@ public class ImageMatch : MonoBehaviour
         int numCorrect = 0;
         for (int i = 0; i < areaList.Count; i++)
         {
-            if (areaList[i].imageHeld != null && areaList[i].imageHeld.GetComponent<WordOption>().correctSprite == areaList[i].associatedSprite)
+            if (areaList[i].wordHeld != null && areaList[i].wordHeld.correctSprite == areaList[i].associatedSprite)
             {
                 numCorrect++;
             }

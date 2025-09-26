@@ -16,6 +16,6 @@ public class Area : MonoBehaviour
     }
     
     public float areaRadius = 100f;
-    public Image imageHeld;
+    public WordOption wordHeld;
     public Sprite associatedSprite;
 }
