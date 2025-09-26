@@ -15,6 +15,8 @@ public class MissingLetter : MonoBehaviour
     private string[] words = { "egg", "apple", "shoe", "bee", "flower", "tree", "rock", "juice", "colour", "fruit", "meat", "food", "banana", "fish", "cheese", "ice", "milk", "home", "car" };
 
     [SerializeField] private TextMeshProUGUI buttonText1, buttonText2, buttonText3, wordText1;
+
+    [SerializeField] private StarManager starManager;
     
     void Start()
     {
@@ -89,10 +91,12 @@ public class MissingLetter : MonoBehaviour
     {
         if (selectedAnswer != null && selectedAnswer.text == letter.ToString())
         {
+            starManager.ShowResults(3);
             Debug.Log("RIGHT ANSWER.");
         }
         else
         {
+            starManager.ShowResults(0);
             Debug.Log("WRONG ANSWER.");
         }
     }
