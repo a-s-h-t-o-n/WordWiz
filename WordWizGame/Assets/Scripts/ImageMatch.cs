@@ -12,6 +12,8 @@ public class ImageMatch : MonoBehaviour
     [SerializeField] private List<WordOption> wordObjects;
     [SerializeField] private List<Area> areaList;
 
+    [SerializeField] private Sprite debugSprite;
+
     private WordOption heldWord;
     public static Image overlappedArea;
 
@@ -19,6 +21,10 @@ public class ImageMatch : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        for (int i = 0; i < 3; i++)
+        {
+            generatedImages.Insert(i, debugSprite);
+        }
         GenerateImages();
     }
 
@@ -78,10 +84,20 @@ public class ImageMatch : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
+            // select a random sprite, make sure it's not already being used
             int j = Random.Range(0, spriteList.Count);
-            generatedImages.Insert(i, spriteList[j]);
+            while (generatedImages.Contains(spriteList[j]))
+            {
+                j = Random.Range(0, spriteList.Count);
+            }
+            
+            // assign sprite to relevant objects
+            generatedImages[i] = spriteList[j];
             areaList[i].associatedSprite = generatedImages[i];
             imageObjects[i].sprite = generatedImages[i];
+            
+            // select a random word object, make sure it's not already used
+            //int k = Random.Range(0, 3 - i);
             wordObjects[i].textMesh.text = spriteList[j].name.PartBefore('_');
             wordObjects[i].correctSprite = generatedImages[i];
         }

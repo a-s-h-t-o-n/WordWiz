@@ -1059,7 +1059,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1020078402}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1826710887}
+        m_TargetAssemblyTypeName: ImageMatch, Assembly-CSharp
+        m_MethodName: GenerateImages
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1020078402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2132,6 +2144,7 @@ MonoBehaviour:
   - {fileID: 762854459}
   - {fileID: 1076182981}
   - {fileID: 1911269177}
+  debugSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1 &1911269172
 GameObject:
   m_ObjectHideFlags: 0
