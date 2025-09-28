@@ -7,28 +7,29 @@ using UnityEngine.UI;
 
 public class CutUpSentences : MonoBehaviour
 {
+    //SENTENCES
     public TextAsset sentencesFile;
     public string[] lines;
 
-    public int NumOfSentences = 3;
+    //public int NumOfSentences = 3;
 
+    //GRID/CANVAS AREA
     public RectTransform wordArea;
-
-    //PREFAB
     public GameObject wordBox;
-
     public GameObject sentencePlacementArea;
     GridLayoutGroup grid;
+
+    //SENTENCE
     public string fullSentence;
     public string[] words;
 
-    bool correct = true;
+    //RESULTS
+    private bool correct = true;
     public GameObject answerImage;
     public TextMeshProUGUI answerText;
     public Button nextButton;
-
-    public TextMeshProUGUI textCheck;
-    public Transform wordCheck;
+    private TextMeshProUGUI textCheck;
+    private Transform wordCheck;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -43,12 +44,6 @@ public class CutUpSentences : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //CheckCurrentSentence();
-
-        /*if (Input.GetKeyDown(KeyCode.Space))
-        {
-            GenerateCutUpSentence();
-        }*/
     }
 
     string[] SplitLines(string text)
@@ -88,22 +83,18 @@ public class CutUpSentences : MonoBehaviour
         //}
     }
 
-
+    //check the user input to the actual sentence
     public bool CheckCurrentSentence()
     {
-        //string checkSentence = "";
         answerText.text = "RIGHT";
 
-
-        //get word in grid layout of sentence placement
-        //check for all word in sentence that grid layout words == sentence words
-
-        //for all in the grid
-
+        //for the length of the actual sentence
         for (int i = 0; i < words.Length; i++)
         {
+            //get the word slot
             wordCheck = grid.transform.GetChild(i);
             
+            //if word slot == 0 aka no word box in the first slot, it is automatically wrong
             if(wordCheck.childCount == 0)
             {
                 answerText.text = "WRONG";
@@ -111,20 +102,18 @@ public class CutUpSentences : MonoBehaviour
                 correct = false;
                 break;
             }
+            //get text from word box
             textCheck = wordCheck.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
            
-
+            //if text at any point isn't the same as the sentence word, it's wrong
             if (textCheck.text != words[i])
             {
                 answerText.text = "WRONG";
                 correct = false;
             }
-
-            
-            //checkSentence += textCheck.text + " ";
         }
 
-            
+        //display next button and result
         answerImage.SetActive(true);
         nextButton.gameObject.SetActive(true);
         return correct;
@@ -132,9 +121,11 @@ public class CutUpSentences : MonoBehaviour
 
     public void SpawnNewSentence()
     {
+        //hide previous result and next button
         answerImage.SetActive(false);
         nextButton.gameObject.SetActive(false);
 
+        //remove all word boxes from previous sentence
         for(int i = 0; i < grid.transform.childCount; i++)
         {
             Transform space = grid.transform.GetChild(i);
