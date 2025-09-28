@@ -17,6 +17,8 @@ public class CutUpSentences : MonoBehaviour
     //PREFAB
     public GameObject wordBox;
 
+    public GameObject sentencePlacementArea;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -67,6 +69,7 @@ public class CutUpSentences : MonoBehaviour
 
         //}
     }
+
 
     void TestCurrentSentence()
     {
