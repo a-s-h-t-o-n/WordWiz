@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
@@ -52,7 +53,7 @@ public class CutUpSentences : MonoBehaviour
         {
             return null;
         }
-        string[] lines = text.Split('\n');
+        string[] lines = text.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
 
         return lines;
     }
@@ -66,7 +67,7 @@ public class CutUpSentences : MonoBehaviour
         }
 
         //get random sentence in file
-        int randomSentenceNum = Random.Range(0, lines.Length);
+        int randomSentenceNum = UnityEngine.Random.Range(0, lines.Length);
         fullSentence = lines[randomSentenceNum];
 
         //get random sentence and split into words
