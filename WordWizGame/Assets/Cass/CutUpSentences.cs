@@ -103,23 +103,22 @@ public class CutUpSentences : MonoBehaviour
         for (int i = 0; i < words.Length; i++)
         {
             wordCheck = grid.transform.GetChild(i);
-
-            if(wordCheck.childCount > 0)
-        {
-            textCheck = wordCheck.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
-            if (textCheck == null || wordCheck == null)
+            
+            if(wordCheck.childCount == 0)
             {
                 answerText.text = "WRONG";
+
                 correct = false;
                 break;
             }
+            textCheck = wordCheck.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
+           
 
             if (textCheck.text != words[i])
             {
                 answerText.text = "WRONG";
                 correct = false;
             }
-        }
 
             
             //checkSentence += textCheck.text + " ";
