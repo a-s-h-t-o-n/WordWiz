@@ -821,7 +821,7 @@ RectTransform:
   m_GameObject: {fileID: 407936539}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.053, y: 1.053, z: 1.053}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2033107793}
@@ -829,8 +829,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 790, y: 462}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 800, y: 454}
+  m_SizeDelta: {x: 67.4753, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &407936541
 MonoBehaviour:
@@ -852,7 +852,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1734854730939209438, guid: 4322f9f8e933b52498db89bb567566af, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2116,7 +2116,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 795, y: 136}
+  m_AnchoredPosition: {x: 805, y: 136}
   m_SizeDelta: {x: 90.6939, y: 84.2898}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1175260132
@@ -2195,8 +2195,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 5300797802251576773, guid: 36bc19fb55498174d97095882d3d763b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2852,7 +2852,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentencesFile: {fileID: 4900000, guid: 2a31deb2555a0a140b03e612a8e01f8f, type: 3}
   lines: []
-  NumOfSentences: 3
   wordArea: {fileID: 1304921552}
   wordBox: {fileID: 5356599597043839810, guid: f417f50524bd0e047a7efd3d6b4a8b92, type: 3}
   sentencePlacementArea: {fileID: 1543536857}
