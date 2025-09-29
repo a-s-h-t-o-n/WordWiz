@@ -23,6 +23,7 @@ public class CutUpSentences : MonoBehaviour
     //SENTENCE
     public string fullSentence;
     public string[] words;
+    public string[] shuffledWords;
 
     //RESULTS
     private bool correct = true;
@@ -73,8 +74,19 @@ public class CutUpSentences : MonoBehaviour
         //get random sentence and split into words
         words = fullSentence.Split(' ');
 
+        //shuffledWords = words.;
+        //System.Array.Copy(words, shuffledWords, words.Length);
+        shuffledWords = (string[]) words.Clone();
+        /*for(int i = 0; i < words.Length; i++)
+        {
+            shuffledWords[i] = words[i];
+        }*/
+
+        //shuffle words
+        ShuffleWords(shuffledWords);
+
         //for each word generate a word box
-        foreach (string word in words)
+        foreach (string word in shuffledWords)
         {
             GameObject newWordBox = Instantiate(wordBox, wordArea);
             TextMeshProUGUI text = newWordBox.GetComponentInChildren<TextMeshProUGUI>();
@@ -82,6 +94,19 @@ public class CutUpSentences : MonoBehaviour
         }
 
         //}
+    }
+
+    private string[] ShuffleWords(string[] shuffledWords)
+    {
+        for (int i = 0; i < shuffledWords.Length; i++)
+        {
+            string temp = shuffledWords[i];
+            int random = UnityEngine.Random.Range(i, shuffledWords.Length);
+            shuffledWords[i] = shuffledWords[random];
+            shuffledWords[random] = temp;
+        }
+
+        return shuffledWords;
     }
 
     //check the user input to the actual sentence
