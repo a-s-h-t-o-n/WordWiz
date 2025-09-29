@@ -8,6 +8,7 @@ public class StarManager : MonoBehaviour
     [SerializeField] private Sprite starGold;
     [SerializeField] private Sprite starGrey;
     [SerializeField] private List<Image> stars;
+    [SerializeField] private GameObject againButton;
     
     
     [SerializeField] private GameObject resultObject;
@@ -40,5 +41,7 @@ public class StarManager : MonoBehaviour
                 star.sprite = starGrey;
             }
         }
+        
+        againButton.SetActive(true);
     }
 }
