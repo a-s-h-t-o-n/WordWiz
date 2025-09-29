@@ -65,8 +65,11 @@ public class ImageMatch : MonoBehaviour
     {
         foreach (var area in areaList)
         {
+            
             if (Vector3.Distance(heldWord.transform.position, area.transform.position) <= area.areaRadius)
             {
+                if (area.wordHeld != null) break;
+                
                 heldWord.transform.position = area.transform.position;
                 area.wordHeld = heldWord;
                 heldWord.GetComponent<WordOption>().occupiedArea = area;
@@ -74,16 +77,23 @@ public class ImageMatch : MonoBehaviour
             }
         }
         
-        WordOption word = heldWord.GetComponent<WordOption>();
-        if (word)
+        if (heldWord)
         {
-            heldWord.transform.position = word.startPos;
+            heldWord.transform.position = heldWord.startPos;
         }
         
     }
 
     public void GenerateImages()
     {
+        foreach (var word in wordObjects)
+        {
+            if (word)
+            {
+                word.correctSprite = null;
+            }
+        }
+        
         for (int i = 0; i < 3; i++)
         {
             // select a random sprite, make sure it's not already being used
@@ -97,6 +107,8 @@ public class ImageMatch : MonoBehaviour
             generatedImages[i] = spriteList[j];
             areaList[i].associatedSprite = generatedImages[i];
             imageObjects[i].sprite = generatedImages[i];
+
+
             
             // select a random word object, make sure it's not already used
             int k = Random.Range(0, 3);
