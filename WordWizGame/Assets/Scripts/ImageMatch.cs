@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
@@ -134,5 +135,10 @@ public class ImageMatch : MonoBehaviour
         
         starManager.ShowResults(numCorrect);
         Debug.Log($"YOU GOT {numCorrect} ANSWERS CORRECT");
+    }
+
+    public void GoToScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }
