@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MissingLetter : MonoBehaviour
@@ -113,5 +114,10 @@ public class MissingLetter : MonoBehaviour
             starManager.ShowResults(0);
             Debug.Log("WRONG ANSWER.");
         }
+    }
+
+    public void GoToScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }
