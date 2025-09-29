@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: f29412cf28e0b024ab62ab02cf0a724c
+  - enabled: 1
+    path: Assets/Cass/GroceryStoreTest.unity
+    guid: 329594150077b884287b3cb5136f82cb
+  - enabled: 1
+    path: Assets/Scenes/ImageMatchScene.unity
+    guid: 71020b7dfc941a54b8ddf99cfdef14c0
+  - enabled: 1
+    path: Assets/Scenes/MissingLetterScene.unity
+    guid: a14d38185c20aea46a5f6f50ac9da6c4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
