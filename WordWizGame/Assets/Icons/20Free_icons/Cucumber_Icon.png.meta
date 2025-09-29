@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 641729819222287949
-    second: Cucucmber_Icon_0
+    second: Cucumber_Icon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cucucmber_Icon_0
+      name: Cucumber_Icon_0
       rect:
         serializedVersion: 2
         x: 82
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cucucmber_Icon_0: 641729819222287949
+      Cucumber_Icon_0: 641729819222287949
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
