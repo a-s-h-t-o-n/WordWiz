@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MissingLetter : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class MissingLetter : MonoBehaviour
     private List<char> letters = new List<char>{'0', '0', '0'};
     private int numOptions = 3;
     private TextMeshProUGUI selectedAnswer;
+    private string wordWithGap;
 
     // replace this w/ SO or similar data object
     private string[] words = { "egg", "apple", "shoe", "bee", "flower", "tree", "rock", "juice", "colour", "fruit", "meat", "food", "banana", "fish", "cheese", "ice", "milk", "home", "car" };
@@ -67,10 +69,14 @@ public class MissingLetter : MonoBehaviour
 
     private void SetUIElements()
     {
+        buttonText1.GetComponentInParent<Image>().color = Color.white;
+        buttonText2.GetComponentInParent<Image>().color = Color.white;
+        buttonText3.GetComponentInParent<Image>().color = Color.white;
         buttonText1.text = letters[0].ToString();
         buttonText2.text = letters[1].ToString();
         buttonText3.text = letters[2].ToString();
-        wordText1.text = word.Substring(0, word.IndexOf(letter)) + "_" + word.Substring(word.IndexOf(letter) + 1);
+        wordWithGap = word.Substring(0, word.IndexOf(letter)) + "_" + word.Substring(word.IndexOf(letter) + 1);
+        wordText1.text = wordWithGap;
         
         if (isDebug) DedededeDebugItAll();
     }
@@ -84,7 +90,15 @@ public class MissingLetter : MonoBehaviour
 
     public void SetSelection(TextMeshProUGUI selection)
     {
+        if (selectedAnswer != null)
+        {
+            selectedAnswer.transform.parent.GetComponent<Image>().color = Color.white; 
+        }
         selectedAnswer = selection;
+        selectedAnswer.transform.parent.GetComponent<Image>().color = Color.green;
+
+        wordText1.text = wordWithGap.Replace('_', selectedAnswer.text[0]);
+
     }
 
     public void CheckSelection()
