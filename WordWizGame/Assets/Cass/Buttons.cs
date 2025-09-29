@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
@@ -26,5 +27,10 @@ public class Buttons : MonoBehaviour
     {
         Debug.Log("clicking next");
         cutUpSentences.SpawnNewSentence();
+    }
+
+    public void Back()
+    {
+        SceneManager.LoadScene("Title");
     }
 }

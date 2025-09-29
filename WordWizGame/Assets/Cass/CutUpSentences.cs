@@ -30,6 +30,7 @@ public class CutUpSentences : MonoBehaviour
     public GameObject answerImage;
     public TextMeshProUGUI answerText;
     public Button nextButton;
+    public Button backButton;
     private TextMeshProUGUI textCheck;
     private Transform wordCheck;
 
@@ -112,7 +113,7 @@ public class CutUpSentences : MonoBehaviour
     //check the user input to the actual sentence
     public bool CheckCurrentSentence()
     {
-        answerText.text = "RIGHT";
+        answerText.text = "CORRECT";
 
         //for the length of the actual sentence
         for (int i = 0; i < words.Length; i++)
@@ -123,7 +124,7 @@ public class CutUpSentences : MonoBehaviour
             //if word slot == 0 aka no word box in the first slot, it is automatically wrong
             if(wordCheck.childCount == 0)
             {
-                answerText.text = "WRONG";
+                answerText.text = "INCORRECT";
 
                 correct = false;
                 break;
@@ -134,7 +135,7 @@ public class CutUpSentences : MonoBehaviour
             //if text at any point isn't the same as the sentence word, it's wrong
             if (textCheck.text != words[i])
             {
-                answerText.text = "WRONG";
+                answerText.text = "INCORRECT";
                 correct = false;
             }
         }
@@ -142,6 +143,7 @@ public class CutUpSentences : MonoBehaviour
         //display next button and result
         answerImage.SetActive(true);
         nextButton.gameObject.SetActive(true);
+        backButton.gameObject.SetActive(true);
         return correct;
     }
 
@@ -150,9 +152,11 @@ public class CutUpSentences : MonoBehaviour
         //hide previous result and next button
         answerImage.SetActive(false);
         nextButton.gameObject.SetActive(false);
+        backButton.gameObject.SetActive(false);
+
 
         //remove all word boxes from previous sentence
-        for(int i = 0; i < grid.transform.childCount; i++)
+        for (int i = 0; i < grid.transform.childCount; i++)
         {
             Transform space = grid.transform.GetChild(i);
             
