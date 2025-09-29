@@ -29,4 +29,9 @@ public class TitleButtons : MonoBehaviour
     {
         SceneManager.LoadScene("MissingLetterScene");
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
