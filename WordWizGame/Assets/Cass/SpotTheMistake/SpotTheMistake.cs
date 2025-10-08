@@ -25,7 +25,9 @@ public class SpotTheMistake : MonoBehaviour
     public Button nextButton;
     public Button backButton;
     private TextMeshProUGUI textCheck;
-    private Button selectedWord;
+    public Button selectedWord;
+    public string mistake = null;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -94,7 +96,6 @@ public class SpotTheMistake : MonoBehaviour
 
     public bool CheckCurrentSentence()
     {
-        string mistake = null;
         answerText.text = "CORRECT";
 
         foreach(string word in words)
