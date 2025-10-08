@@ -1473,6 +1473,7 @@ MonoBehaviour:
   answerText: {fileID: 1016101724}
   nextButton: {fileID: 1515717378}
   backButton: {fileID: 940295348}
+  selectedWord: {fileID: 0}
   mistake: 
 --- !u!1 &1407587390
 GameObject:
@@ -1867,11 +1868,11 @@ RectTransform:
   m_Children:
   - {fileID: 1214090}
   - {fileID: 632473903}
+  - {fileID: 2041230610}
+  - {fileID: 360963101}
   - {fileID: 1438530407}
   - {fileID: 1515717374}
   - {fileID: 940295352}
-  - {fileID: 2041230610}
-  - {fileID: 360963101}
   m_Father: {fileID: 1362204745}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
