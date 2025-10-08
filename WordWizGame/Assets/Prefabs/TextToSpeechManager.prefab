@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e15674a03c1cd54d916559498296cc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TTSPrefab: {fileID: 180912086354686728}
+  TestWord: 

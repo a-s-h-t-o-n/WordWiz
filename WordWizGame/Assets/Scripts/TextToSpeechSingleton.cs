@@ -15,6 +15,8 @@ public class TextToSpeechSingleton : MonoBehaviour
             {
                 return _instance;
             }
+            
+            
 
             GameObject go = new GameObject("TextToSpeechManager");
             go.AddComponent<TextToSpeechSingleton>();
