@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Title.unity
     guid: f29412cf28e0b024ab62ab02cf0a724c
   - enabled: 1
-    path: Assets/Cass/GroceryStoreTest.unity
+    path: Assets/Cass/CutUpSentences/GroceryStoreTest.unity
     guid: 329594150077b884287b3cb5136f82cb
   - enabled: 1
     path: Assets/Scenes/ImageMatchScene.unity
