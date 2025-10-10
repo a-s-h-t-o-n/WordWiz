@@ -2,10 +2,14 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class GetSelectedButton : MonoBehaviour, ISelectHandler
+public class GetSelectedButton : MonoBehaviour, ISelectHandler, IDeselectHandler
 {
     SpotTheMistake spotTheMistake;
 
+    public void OnDeselect(BaseEventData eventData)
+    {
+        spotTheMistake.selectedWord = null;
+    }
 
     public void OnSelect(BaseEventData eventData)
     {
