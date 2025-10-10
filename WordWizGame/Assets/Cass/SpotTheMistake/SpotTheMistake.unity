@@ -1490,11 +1490,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentencesFile: {fileID: 4900000, guid: 95dd140acf1534d40b278028dc2fe2ce, type: 3}
   lines: []
-  category: GROCERY STORE
+  category: 
   game: 
-  chosenCategory: 
-  chosenGame: 
+  chosenCategory: GROCERY STORE
+  chosenGame: CUT UP SENTENCES
   categoryLines: []
+  gameModeLines: []
 --- !u!1 &1407587390
 GameObject:
   m_ObjectHideFlags: 0

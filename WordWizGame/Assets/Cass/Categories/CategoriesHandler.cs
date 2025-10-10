@@ -14,12 +14,24 @@ public class CategoriesHandler : MonoBehaviour
     public string chosenCategory;
     public string chosenGame;
     public List<string> categoryLines;
+    public List<string> gameModeLines;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         lines = SplitLines(sentencesFile.text);
         ReadCategory();
+        ReadGameMode();
+    }
+    string[] SplitLines(string text)
+    {
+        if (text == null)
+        {
+            return null;
+        }
+        string[] lines = text.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
+
+        return lines;
     }
 
     List<string> ReadCategory()
@@ -30,35 +42,52 @@ public class CategoriesHandler : MonoBehaviour
         for (int i = 0; i < lines.Length; i++)
         {
             string line = lines[i].Trim();
+            
+            if (line.StartsWith("{") && line.EndsWith("}"))
             {
-                if (line.StartsWith('{') && line.EndsWith('}'))
+                currentCategory = line.Trim('{', '}').Trim();
+
+                if(chosenCategory == currentCategory)
                 {
-                    currentCategory = line.Trim('{', '}').Trim();
-                    if (chosenCategory != currentCategory)
+                    i++;
+                    while (lines[i].Trim() != "___")
                     {
+                        categoryLines.Add(lines[i].Trim());
                         i++;
-                        while (lines[i].Trim() != "___")
-                        {
-                            categoryLines.Add(lines[i].Trim());
-                            i++;
-                        }
-                        break;
                     }
+                    break;
                 }
             }
+            
         }
         return categoryLines;
     }
 
-    string[] SplitLines(string text)
+    List<string> ReadGameMode()
     {
-        if (text == null)
-        {
-            return null;
-        }
-        string[] lines = text.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
+        gameModeLines = new List<string>();
+        string currentGameMode = null;
 
-        return lines;
+        for(int i = 0;i < categoryLines.Count; i++)
+        {
+            string line = categoryLines[i].Trim();
+
+            if(line.StartsWith('-') && line.EndsWith('-'))
+            {
+                currentGameMode = line.Trim('-').Trim();
+                if (chosenGame == currentGameMode)
+                {
+                    i++;
+                    while (categoryLines[i].Trim() != "***")
+                    {
+                        gameModeLines.Add(categoryLines[i].Trim());
+                        i++;
+                    }
+                    break;
+                }
+            }
+        }
+        return gameModeLines;
     }
 
     /*
