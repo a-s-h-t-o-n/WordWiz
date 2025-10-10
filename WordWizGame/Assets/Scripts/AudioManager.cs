@@ -6,6 +6,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip clickSound;
     [SerializeField] private AudioClip correctSound;
     [SerializeField] private AudioClip incorrectSound;
+    [SerializeField] private AudioClip restartSound;
     
     private static AudioSource audioSource;
     
@@ -37,5 +38,10 @@ public class AudioManager : MonoBehaviour
     public void PlayIncorrectSound()
     {
         audioSource.PlayOneShot(incorrectSound);
+    }
+
+    public void PlayRestartSound()
+    {
+        audioSource.PlayOneShot(restartSound);
     }
 }

@@ -48,6 +48,7 @@ MonoBehaviour:
   clickSound: {fileID: 8300000, guid: 9e506846995518b43bb5f4d92f61335c, type: 3}
   correctSound: {fileID: 8300000, guid: d2a81eba53b13bb45bb7d3cd724805c2, type: 3}
   incorrectSound: {fileID: 8300000, guid: 38c45af31d85adf4da1ba4d7c57e7fda, type: 3}
+  restartSound: {fileID: 8300000, guid: be63c7c474994a74f90bc163614e104a, type: 3}
 --- !u!82 &7098423936557428418
 AudioSource:
   m_ObjectHideFlags: 0
