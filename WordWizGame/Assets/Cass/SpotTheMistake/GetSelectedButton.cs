@@ -2,18 +2,20 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class GetSelectedButton : MonoBehaviour, ISelectHandler, IDeselectHandler
+public class GetSelectedButton : MonoBehaviour, ISelectHandler
 {
     SpotTheMistake spotTheMistake;
+    GameObject lastSelected;
 
-    public void OnDeselect(BaseEventData eventData)
+    /*public void OnDeselect(BaseEventData eventData)
     {
         spotTheMistake.selectedWord = null;
-    }
+    }*/
 
     public void OnSelect(BaseEventData eventData)
     {
         spotTheMistake.selectedWord = this.gameObject.GetComponent<Button>();
+        lastSelected = this.gameObject;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,11 +24,12 @@ public class GetSelectedButton : MonoBehaviour, ISelectHandler, IDeselectHandler
         spotTheMistake = FindFirstObjectByType<SpotTheMistake>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (EventSystem.current.currentSelectedGameObject == null && lastSelected != null)
+        {
+            EventSystem.current.SetSelectedGameObject(lastSelected);
+        }
     }
-
 
 }
