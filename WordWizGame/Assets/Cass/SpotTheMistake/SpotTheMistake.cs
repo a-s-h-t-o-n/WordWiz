@@ -106,12 +106,21 @@ public class SpotTheMistake : MonoBehaviour
             }
         }
 
-        textCheck = selectedWord.GetComponentInChildren<TextMeshProUGUI>();
-
-        if (textCheck.text != mistake)
+        if(selectedWord == null)
         {
             answerText.text = "INCORRECT";
+
             correct = false;
+        }
+        else
+        {
+            textCheck = selectedWord.GetComponentInChildren<TextMeshProUGUI>();
+
+            if (textCheck.text != mistake)
+            {
+                answerText.text = "INCORRECT";
+                correct = false;
+            }
         }
 
         //display next button and result
