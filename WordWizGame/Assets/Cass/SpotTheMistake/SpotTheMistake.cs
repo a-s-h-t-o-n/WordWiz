@@ -84,6 +84,23 @@ public class SpotTheMistake : MonoBehaviour
         //get random sentence and split into words
         words = fullSentence.Split(' ');
 
+
+        foreach (string word in words)
+        {
+            if (word.StartsWith("*") && word.EndsWith("*"))
+            {
+                mistake = word.Trim('*');
+            }
+        }
+
+        for(int i = 0;i < words.Length; i++)
+        {
+            if (words[i].StartsWith("*") && words[i].EndsWith("*"))
+            {
+                words[i] = words[i].Trim('*');
+            }
+        }
+
         //for each word generate a word box
         foreach (string word in words)
         {
@@ -97,14 +114,6 @@ public class SpotTheMistake : MonoBehaviour
     public bool CheckCurrentSentence()
     {
         answerText.text = "CORRECT";
-
-        foreach(string word in words)
-        {
-            if (word.EndsWith("*"))
-            {
-                mistake = word;
-            }
-        }
 
         if(selectedWord == null)
         {
