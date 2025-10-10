@@ -16,10 +16,20 @@ public class CategoriesHandler : MonoBehaviour
     public List<string> categoryLines;
     public List<string> gameModeLines;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         lines = SplitLines(sentencesFile.text);
+
+    }
+
+    private void Update()
+    {
         ReadCategory();
         ReadGameMode();
     }

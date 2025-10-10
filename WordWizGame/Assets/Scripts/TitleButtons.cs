@@ -4,10 +4,6 @@ using UnityEngine.SceneManagement;
 public class TitleButtons : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -15,19 +11,9 @@ public class TitleButtons : MonoBehaviour
         
     }
 
-    public void CutUpSentence()
+    public void PlayHi()
     {
-        SceneManager.LoadScene("GroceryStoreTest");
-    }
-
-    public void WordToImage()
-    {
-        SceneManager.LoadScene("ImageMatchScene");
-    }
-
-    public void MissingLetter()
-    {
-        SceneManager.LoadScene("MissingLetterScene");
+        SceneManager.LoadScene("Categories");
     }
 
     public void Quit()
