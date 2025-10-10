@@ -107,11 +107,19 @@ public class MissingLetter : MonoBehaviour
         if (selectedAnswer != null && selectedAnswer.text == letter.ToString())
         {
             starManager.ShowResults(3);
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayCorrectSound();
+            }
             Debug.Log("RIGHT ANSWER.");
         }
         else
         {
             starManager.ShowResults(0);
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayIncorrectSound();
+            }
             Debug.Log("WRONG ANSWER.");
         }
     }
