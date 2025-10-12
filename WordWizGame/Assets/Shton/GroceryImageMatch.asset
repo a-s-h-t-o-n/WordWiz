@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93a72e46cb5871e45acc564f2025d309, type: 3}
-  m_Name: ImageMatchGrocery
+  m_Name: GroceryImageMatch
   m_EditorClassIdentifier: 
   spriteOptions:
   - {fileID: 1488219961968408541, guid: 212dafa4d115adb4b97a92c49e622407, type: 3}

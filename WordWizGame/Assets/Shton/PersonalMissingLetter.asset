@@ -25,3 +25,7 @@ MonoBehaviour:
   - Friend
   - Name
   - Surname
+  - Car
+  - Birthday
+  - Dream
+  - Pets

@@ -19,11 +19,28 @@ public class ImageMatch : MonoBehaviour
     public static Image overlappedArea;
 
     private List<Sprite> generatedImages = new List<Sprite>();
+
+    [SerializeField] private ImageMatchSO groceryOptions;
+
+    [SerializeField] private ImageMatchSO personalOptions;
     
     [SerializeField] private StarManager starManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        CategoriesHandler catHandler = FindFirstObjectByType<CategoriesHandler>();
+        if (catHandler != null)
+        {
+            if (catHandler.chosenCategory == "GROCERY STORE")
+            {
+                spriteList = groceryOptions.spriteOptions;
+            }
+            else if (catHandler.chosenCategory == "PERSONAL INFORMATION")
+            {
+                spriteList = personalOptions.spriteOptions;
+            }
+        }
+        
         for (int i = 0; i < 3; i++)
         {
             generatedImages.Insert(i, debugSprite);
@@ -74,6 +91,7 @@ public class ImageMatch : MonoBehaviour
                 heldWord.transform.position = area.transform.position;
                 area.wordHeld = heldWord;
                 heldWord.GetComponent<WordOption>().occupiedArea = area;
+                TextToSpeech.Instance.SpeakWord(heldWord.textMesh.text);
                 return;
             }
         }
@@ -134,6 +152,14 @@ public class ImageMatch : MonoBehaviour
         }
         
         starManager.ShowResults(numCorrect);
+        if (numCorrect > 0)
+        {
+            AudioManager.Instance.PlayCorrectSound();
+        }
+        else
+        {
+            AudioManager.Instance.PlayIncorrectSound();
+        }
         Debug.Log($"YOU GOT {numCorrect} ANSWERS CORRECT");
     }
 
