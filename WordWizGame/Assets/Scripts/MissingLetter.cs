@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class MissingLetter : MonoBehaviour
 {
@@ -15,14 +17,34 @@ public class MissingLetter : MonoBehaviour
     private string wordWithGap;
 
     // replace this w/ SO or similar data object
-    private string[] words = { "egg", "apple", "shoe", "bee", "flower", "tree", "rock", "juice", "colour", "fruit", "meat", "food", "banana", "fish", "cheese", "ice", "milk", "home", "car" };
+    private string[] words;
+
+    [SerializeField] private MissingLetterSO groceryOptions;
+    [SerializeField] private MissingLetterSO personalOptions;
 
     [SerializeField] private TextMeshProUGUI buttonText1, buttonText2, buttonText3, wordText1;
 
     [SerializeField] private StarManager starManager;
-    
+
+    private void Awake()
+    {
+        CategoriesHandler catHandle = FindFirstObjectByType<CategoriesHandler>();
+        if (catHandle != null)
+        {
+            if (catHandle.chosenCategory == "GROCERY STORE")
+            {
+                words = groceryOptions.wordOptions.ToArray();
+            }
+            else if (catHandle.chosenCategory == "PERSONAL INFORMATION")
+            {
+                words = personalOptions.wordOptions.ToArray();
+            }
+        }
+    }
+
     void Start()
     {
+        
         GenerateRandomWord();
     }
     
@@ -110,6 +132,7 @@ public class MissingLetter : MonoBehaviour
             if (AudioManager.Instance != null)
             {
                 AudioManager.Instance.PlayCorrectSound();
+                TextToSpeech.Instance.SpeakWord(word);
             }
             Debug.Log("RIGHT ANSWER.");
         }
@@ -119,6 +142,7 @@ public class MissingLetter : MonoBehaviour
             if (AudioManager.Instance != null)
             {
                 AudioManager.Instance.PlayIncorrectSound();
+                TextToSpeech.Instance.SpeakWord(wordText1.text);
             }
             Debug.Log("WRONG ANSWER.");
         }
