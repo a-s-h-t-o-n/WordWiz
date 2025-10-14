@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,8 +7,9 @@ using UnityEngine.UI;
 public class SpotTheMistake : MonoBehaviour
 {
     //SENTENCES
+    public CategoriesHandler categoriesHandler;
     public TextAsset sentencesFile;
-    public string[] lines;
+    public List<string> lines;
 
     //GRID/CANVAS AREA
     public RectTransform wordArea;
@@ -32,20 +34,10 @@ public class SpotTheMistake : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        lines = SplitLines(sentencesFile.text);
+        categoriesHandler = FindFirstObjectByType<CategoriesHandler>();
+        lines = categoriesHandler.gameModeLines;
         grid = wordArea.GetComponent<GridLayoutGroup>();
         SpawnNewSentence();
-    }
-
-    string[] SplitLines(string text)
-    {
-        if (text == null)
-        {
-            return null;
-        }
-        string[] lines = text.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
-
-        return lines;
     }
 
     public void SpawnNewSentence()
@@ -54,7 +46,6 @@ public class SpotTheMistake : MonoBehaviour
         answerImage.SetActive(false);
         nextButton.gameObject.SetActive(false);
         backButton.gameObject.SetActive(false);
-
 
         //remove all word boxes from previous sentence
         for (int i = 0; i < grid.transform.childCount; i++)
@@ -78,7 +69,7 @@ public class SpotTheMistake : MonoBehaviour
         }
 
         //get random sentence in file
-        int randomSentenceNum = UnityEngine.Random.Range(0, lines.Length);
+        int randomSentenceNum = UnityEngine.Random.Range(0, lines.Count);
         fullSentence = lines[randomSentenceNum];
 
         //get random sentence and split into words

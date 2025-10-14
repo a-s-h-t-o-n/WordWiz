@@ -1361,7 +1361,6 @@ GameObject:
   - component: {fileID: 1362204743}
   - component: {fileID: 1362204742}
   - component: {fileID: 1362204746}
-  - component: {fileID: 1362204747}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1464,6 +1463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e09442d4b15e65f4b8b658f31402f267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  categoriesHandler: {fileID: 0}
   sentencesFile: {fileID: 4900000, guid: 1cdf2d106e0d68e41ae5b6033a88ae68, type: 3}
   lines: []
   wordArea: {fileID: 360963101}
@@ -1476,26 +1476,6 @@ MonoBehaviour:
   backButton: {fileID: 940295348}
   selectedWord: {fileID: 0}
   mistake: 
---- !u!114 &1362204747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362204740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d5bffd6e0654c149a9ddc77895d2c9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sentencesFile: {fileID: 4900000, guid: 95dd140acf1534d40b278028dc2fe2ce, type: 3}
-  lines: []
-  category: 
-  game: 
-  chosenCategory: GROCERY STORE
-  chosenGame: CUT UP SENTENCES
-  categoryLines: []
-  gameModeLines: []
 --- !u!1 &1407587390
 GameObject:
   m_ObjectHideFlags: 0

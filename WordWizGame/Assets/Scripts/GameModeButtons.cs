@@ -18,6 +18,12 @@ public class GameModeButtons : MonoBehaviour
         SceneManager.LoadScene("GroceryStoreTest");
     }
 
+    public void SpotTheMistake()
+    {
+        categoriesHandler.chosenGame = "SPOT THE MISTAKE";
+        SceneManager.LoadScene("SpotTheMistake");
+    }
+
     public void WordToImage()
     {
         SceneManager.LoadScene("ImageMatchScene");

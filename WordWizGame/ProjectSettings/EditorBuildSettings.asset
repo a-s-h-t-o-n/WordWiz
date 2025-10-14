@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ImageMatchScene.unity
     guid: 71020b7dfc941a54b8ddf99cfdef14c0
   - enabled: 1
+    path: Assets/Cass/SpotTheMistake/SpotTheMistake.unity
+    guid: 53ddcd1fd9d001a429eed033047cd705
+  - enabled: 1
     path: Assets/Scenes/Categories.unity
     guid: 8722a7c734c562c438edb3169fe1c320
   - enabled: 1
