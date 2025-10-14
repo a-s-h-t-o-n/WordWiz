@@ -10,7 +10,7 @@ public class CutUpSentences : MonoBehaviour
 {
     //SENTENCES
     public TextAsset sentencesFile;
-    public string[] lines;
+    public List<string> lines;
 
     //public int NumOfSentences = 3;
 
@@ -21,6 +21,7 @@ public class CutUpSentences : MonoBehaviour
     GridLayoutGroup grid;
 
     //SENTENCE
+    public CategoriesHandler categoriesHandler;
     public string fullSentence;
     public string[] words;
     public string[] shuffledWords;
@@ -38,26 +39,11 @@ public class CutUpSentences : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        lines = SplitLines(sentencesFile.text);
+        categoriesHandler = FindFirstObjectByType<CategoriesHandler>();
+        lines = categoriesHandler.gameModeLines;
         grid = sentencePlacementArea.GetComponent<GridLayoutGroup>();
         SpawnNewSentence();
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
-    string[] SplitLines(string text)
-    {
-        if (text == null)
-        {
-            return null;
-        }
-        string[] lines = text.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
-
-        return lines;
     }
 
     public void GenerateCutUpSentence()
@@ -69,7 +55,7 @@ public class CutUpSentences : MonoBehaviour
         }
 
         //get random sentence in file
-        int randomSentenceNum = UnityEngine.Random.Range(0, lines.Length);
+        int randomSentenceNum = UnityEngine.Random.Range(0, lines.Count);
         fullSentence = lines[randomSentenceNum];
 
         //get random sentence and split into words

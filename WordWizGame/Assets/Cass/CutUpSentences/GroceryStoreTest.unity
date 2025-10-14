@@ -3678,6 +3678,7 @@ MonoBehaviour:
   wordArea: {fileID: 1304921552}
   wordBox: {fileID: 5356599597043839810, guid: f417f50524bd0e047a7efd3d6b4a8b92, type: 3}
   sentencePlacementArea: {fileID: 1543536857}
+  categoriesHandler: {fileID: 0}
   fullSentence: 
   words: []
   shuffledWords: []
