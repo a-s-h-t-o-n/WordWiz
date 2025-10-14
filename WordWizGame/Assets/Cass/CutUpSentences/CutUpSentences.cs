@@ -9,8 +9,8 @@ using UnityEngine.UI;
 public class CutUpSentences : MonoBehaviour
 {
     //SENTENCES
-    public TextAsset sentencesFile;
     public List<string> lines;
+    public CategoriesHandler categoriesHandler;
 
     //public int NumOfSentences = 3;
 
@@ -21,7 +21,6 @@ public class CutUpSentences : MonoBehaviour
     GridLayoutGroup grid;
 
     //SENTENCE
-    public CategoriesHandler categoriesHandler;
     public string fullSentence;
     public string[] words;
     public string[] shuffledWords;

@@ -8,7 +8,6 @@ public class SpotTheMistake : MonoBehaviour
 {
     //SENTENCES
     public CategoriesHandler categoriesHandler;
-    public TextAsset sentencesFile;
     public List<string> lines;
 
     //GRID/CANVAS AREA
