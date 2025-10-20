@@ -1,0 +1,83 @@
+-SHOPPING LIST-
+A list of purchases to be made.
+***
+
+-PRODUCE-
+Fresh fruits and vegetables.
+***
+
+-DAIRY-
+Milk, cheese, yogurt and other products made from milk.
+***
+
+-MEATS-
+Beef, chicken, pork and seafood.
+***
+
+-BAKERY-
+Fresh bread, pastries and cakes.
+***
+
+-FROZEN FOODS-
+Frozen meals, vegetables and desserts.
+***
+
+-BEST BY-
+The date the item should be used before for its best quality.
+***
+
+-CASH REGISTER-
+Where you pay for your items.
+***
+
+-SELF-CHECKOUT-
+Area where you can scan and pay for your own items.
+***
+
+-RECEIPT-
+Printed purchase statement that lists all items bought, their cost and the total amount paid.
+***
+
+-AISLE-
+A passage between rows of shelves where products are displayed.
+***
+
+-EGGS-
+An animal product laid by birds, often sold by the dozen. Often described by dozen e.g a dozen eggs.
+***
+
+-CASHIER-
+Store worker that scans items and processes customer payments.
+***
+
+-BAGGING AREA-
+Store section near checkout where items are placed into bags after purchase.
+***
+
+-CREDIT CARD-
+A plastic card used to make payments.
+***
+
+-BAG-
+Flexible container usually made of plastic, paper or fabric used for carrying things.
+***
+
+-MILK-
+A dairy product. Often described by bottle, jar or carton e.g a bottle of milk.
+***
+
+-APPLE-
+A fruit, typically red or green.
+***
+
+-CHEESE-
+A dairy product made from milk. Often described by packet or bag e.g a packet of cheese.
+***
+
+-SALE-
+A period during which products are sold at reduced costs.
+***
+
+-USE BY-
+The date the item should be used by.
+***
