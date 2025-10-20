@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class WordsHandler : MonoBehaviour
@@ -12,6 +13,14 @@ public class WordsHandler : MonoBehaviour
     public string currentWord;
     public string currentDefinition;
 
+    //WRITING WORD
+    public TextMeshProUGUI wordTop;
+    public TextMeshProUGUI wordMid;
+    public TextMeshProUGUI wordDefinition;
+
+    public bool front = true;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,6 +31,7 @@ public class WordsHandler : MonoBehaviour
     private void Update()
     {
         ReadWord();
+        WriteWord();
     }
     string[] SplitLines(string text)
     {
@@ -51,4 +61,38 @@ public class WordsHandler : MonoBehaviour
 
         }
     }
+
+    public void WriteWord()
+    {
+        wordTop.text = currentWord;
+        wordMid.text = currentWord;
+        wordDefinition.text = currentDefinition;
+
+        if (front)
+        {
+            wordMid.gameObject.SetActive(true);
+            wordTop.gameObject.SetActive(false);
+            wordDefinition.gameObject.SetActive(false);
+        }
+
+        if (!front)
+        {
+            wordMid.gameObject.SetActive(false);
+            wordTop.gameObject.SetActive(true);
+            wordDefinition.gameObject.SetActive(true);
+        }
+    }
+
+    public void Clicked()
+    {
+        if (front)
+        {
+            front = false;
+        }
+        else if (!front)
+        {
+            front = true;
+        }
+    }
+
 }
