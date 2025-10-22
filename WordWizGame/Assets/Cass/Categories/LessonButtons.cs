@@ -24,4 +24,9 @@ public class LessonButtons : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void Proceed()
+    {
+        SceneManager.LoadScene("GameModes");
+    }
 }

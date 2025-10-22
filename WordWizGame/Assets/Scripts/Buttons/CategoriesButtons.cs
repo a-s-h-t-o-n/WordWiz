@@ -14,7 +14,7 @@ public class CategoriesButtons : MonoBehaviour
     public void GroceryStore()
     {
         categoriesHandler.chosenCategory = "GROCERY STORE";
-        SceneManager.LoadScene("GameModes");
+        SceneManager.LoadScene("GroceryStoreLesson");
     }
     public void PersonalInfo()
     {
