@@ -19,18 +19,19 @@ public class WordsHandler : MonoBehaviour
     public TextMeshProUGUI wordDefinition;
 
     public bool front = true;
+    bool foundRandomWord = false;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         lines = SplitLines(wordsFile.text);
+        ReadWord();
 
     }
 
     private void Update()
     {
-        ReadWord();
         WriteWord();
     }
     string[] SplitLines(string text)
@@ -46,7 +47,35 @@ public class WordsHandler : MonoBehaviour
 
     public void ReadWord()
     {
-        for (int i = 0; i < lines.Length; i++)
+        foundRandomWord = false;
+
+        for(int i = 0; i < 50; i++)
+        {
+            int randomLine = UnityEngine.Random.Range(0, lines.Length - 1);
+
+            string line = lines[randomLine].Trim();
+            if (line.StartsWith("-") && line.EndsWith("-"))
+            {
+                currentWord = line.Trim('-', '-').Trim();
+                currentDefinition = lines[randomLine + 1].Trim();
+                foundRandomWord = true;
+                break;
+            }
+        }
+
+        /*while (!foundRandomWord)
+        {
+            int randomLine = UnityEngine.Random.Range(0, lines.Length-1);
+
+            if (lines[randomLine].StartsWith("-") && lines[randomLine].EndsWith("-"))
+            {
+                currentWord = lines[randomLine].Trim('-', '-').Trim();
+                currentDefinition = lines[randomLine + 1].Trim();
+                foundRandomWord = true;
+            }
+        }
+
+        /*for (int i = 0; i < lines.Length; i++)
         {
             string line = lines[i].Trim();
 
@@ -59,8 +88,8 @@ public class WordsHandler : MonoBehaviour
                 break;
             }
 
+        }*/
         }
-    }
 
     public void WriteWord()
     {
