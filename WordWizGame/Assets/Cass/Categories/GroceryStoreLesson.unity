@@ -149,6 +149,7 @@ RectTransform:
   m_Children:
   - {fileID: 604400175}
   - {fileID: 1193737632}
+  - {fileID: 685457887}
   - {fileID: 1700363513}
   m_Father: {fileID: 695722012}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -578,7 +579,7 @@ GameObject:
   - component: {fileID: 685457889}
   - component: {fileID: 685457888}
   m_Layer: 5
-  m_Name: PlayButton
+  m_Name: NextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -591,18 +592,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685457886}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.246851, y: 4.246851, z: 4.246851}
+  m_LocalScale: {x: 2.3701675, y: 2.3701675, z: 2.3701675}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1052408135}
-  m_Father: {fileID: 868533644}
+  m_Father: {fileID: 209628967}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 796, y: -437}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 447, y: -240}
+  m_SizeDelta: {x: 78.5486, y: 37.4949}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &685457888
 MonoBehaviour:
@@ -648,9 +649,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 695722008}
-        m_TargetAssemblyTypeName: TitleButtons, Assembly-CSharp
-        m_MethodName: PlayHi
+      - m_Target: {fileID: 1700363514}
+        m_TargetAssemblyTypeName: WordsHandler, Assembly-CSharp
+        m_MethodName: NextClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -982,7 +983,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 685457887}
   - {fileID: 1624534686}
   - {fileID: 415432268}
   - {fileID: 1231703516}
@@ -1077,8 +1077,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.19999695, y: 1}
-  m_SizeDelta: {x: -106.1705, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -37.7113, y: -17.5097}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1052408136
 MonoBehaviour:
@@ -1100,7 +1100,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Play
+  m_text: Next
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1127,8 +1127,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 11.31
+  m_fontSizeBase: 11.31
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WordsHandler : MonoBehaviour
 {
@@ -19,7 +20,8 @@ public class WordsHandler : MonoBehaviour
     public TextMeshProUGUI wordDefinition;
 
     public bool front = true;
-    bool foundRandomWord = false;
+
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -47,7 +49,6 @@ public class WordsHandler : MonoBehaviour
 
     public void ReadWord()
     {
-        foundRandomWord = false;
 
         for(int i = 0; i < 50; i++)
         {
@@ -58,7 +59,6 @@ public class WordsHandler : MonoBehaviour
             {
                 currentWord = line.Trim('-', '-').Trim();
                 currentDefinition = lines[randomLine + 1].Trim();
-                foundRandomWord = true;
                 break;
             }
         }
@@ -122,6 +122,11 @@ public class WordsHandler : MonoBehaviour
         {
             front = true;
         }
+    }
+
+    public void NextClicked()
+    {
+        ReadWord();
     }
 
 }
