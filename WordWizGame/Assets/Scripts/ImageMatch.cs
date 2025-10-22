@@ -25,6 +25,9 @@ public class ImageMatch : MonoBehaviour
     [SerializeField] private ImageMatchSO personalOptions;
     
     [SerializeField] private StarManager starManager;
+
+    public GameObject helpVideo;
+    public GameObject videoPlayer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -166,5 +169,17 @@ public class ImageMatch : MonoBehaviour
     public void GoToScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void Help()
+    {
+        helpVideo.SetActive(true);
+        videoPlayer.SetActive(true);
+    }
+
+    public void ExitVideo()
+    {
+        helpVideo.SetActive(false);
+        videoPlayer.SetActive(false);
     }
 }
