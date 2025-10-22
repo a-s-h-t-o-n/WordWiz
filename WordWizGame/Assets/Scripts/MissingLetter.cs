@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
 using Random = UnityEngine.Random;
 
 public class MissingLetter : MonoBehaviour
@@ -15,6 +16,9 @@ public class MissingLetter : MonoBehaviour
     private int numOptions = 3;
     private TextMeshProUGUI selectedAnswer;
     private string wordWithGap;
+
+    public GameObject helpVideo;
+    public GameObject videoPlayer;
 
     // replace this w/ SO or similar data object
     private string[] words;
@@ -151,5 +155,17 @@ public class MissingLetter : MonoBehaviour
     public void GoToScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void Help()
+    {
+        helpVideo.SetActive(true);
+        videoPlayer.SetActive(true);
+    }
+
+    public void ExitVideo()
+    {
+        helpVideo.SetActive(false);
+        videoPlayer.SetActive(false);
     }
 }
