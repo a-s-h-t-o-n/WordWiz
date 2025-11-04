@@ -26,4 +26,9 @@ public class CategoriesButtons : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void Home()
+    {
+        SceneManager.LoadScene("Title");
+    }
 }
