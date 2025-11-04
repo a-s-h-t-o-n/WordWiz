@@ -19,7 +19,7 @@ public class CategoriesButtons : MonoBehaviour
     public void PersonalInfo()
     {
         categoriesHandler.chosenCategory = "PERSONAL INFORMATION";
-        SceneManager.LoadScene("GameModes");
+        SceneManager.LoadScene("PersonalLesson");
     }
 
     public void Quit()

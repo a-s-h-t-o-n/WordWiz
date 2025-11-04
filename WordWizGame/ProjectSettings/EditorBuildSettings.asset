@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Cass/SpotTheMistake/SpotTheMistake.unity
     guid: 53ddcd1fd9d001a429eed033047cd705
   - enabled: 1
+    path: Assets/Scenes/PersonalLesson.unity
+    guid: bfb80742e78ca4c43ba704c4f3cd42e6
+  - enabled: 1
     path: Assets/Scenes/Categories.unity
     guid: 8722a7c734c562c438edb3169fe1c320
   - enabled: 1
