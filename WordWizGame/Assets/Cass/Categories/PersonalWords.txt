@@ -1,0 +1,23 @@
+-FIRST NAME-
+Personal name given to someone at birth. It's used before a family/last name. E.g Sarah, Melissa.
+
+-MARRIAGE-
+Legal union of two people as romantic partners.
+
+-HOUSE-
+A building that humans live in.
+
+-APARTMENT-
+A set of rooms in a larger building that humans live in.
+
+-PHONE NUMBER-
+A number assigned to a phone, used to communicate with others.
+
+-WORK-
+A paid activity involving physical or mental effort to achieve a result. 
+
+-AGE-
+Length of time a person has lived in years.
+
+-LAST NAME-
+A person's family name, passed down from parents to children. Also referred to as a surname.

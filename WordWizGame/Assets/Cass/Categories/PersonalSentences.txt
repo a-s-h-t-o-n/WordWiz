@@ -1,0 +1,20 @@
+-What is your name?-
+***
+
+-Where do you work?-
+***
+
+-Are you married?-
+***
+
+-I am married.-
+***
+
+-I live in an apartment.-
+***
+
+-What is your phone number?-
+***
+
+-I am twenty years old.-
+***

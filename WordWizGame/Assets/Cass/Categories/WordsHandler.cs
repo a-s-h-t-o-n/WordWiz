@@ -21,6 +21,8 @@ public class WordsHandler : MonoBehaviour
 
     public bool front = true;
 
+    public TextMeshProUGUI revealText;
+
 
 
 
@@ -102,6 +104,7 @@ public class WordsHandler : MonoBehaviour
             wordMid.gameObject.SetActive(true);
             wordTop.gameObject.SetActive(false);
             wordDefinition.gameObject.SetActive(false);
+            revealText.gameObject.SetActive(true);
         }
 
         if (!front)
@@ -109,6 +112,7 @@ public class WordsHandler : MonoBehaviour
             wordMid.gameObject.SetActive(false);
             wordTop.gameObject.SetActive(true);
             wordDefinition.gameObject.SetActive(true);
+            revealText.gameObject.SetActive(false);
         }
     }
 
