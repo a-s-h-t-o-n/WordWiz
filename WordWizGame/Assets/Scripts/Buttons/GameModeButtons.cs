@@ -34,6 +34,11 @@ public class GameModeButtons : MonoBehaviour
         SceneManager.LoadScene("MissingLetterScene");
     }
 
+    public void Home()
+    {
+        SceneManager.LoadScene("Title");
+    }
+
     public void Quit()
     {
         Application.Quit();
